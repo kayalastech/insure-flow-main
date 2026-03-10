@@ -1,0 +1,9 @@
+ALTER TABLE public.pipeline
+ADD COLUMN IF NOT EXISTS insurance_company_name TEXT,
+ADD COLUMN IF NOT EXISTS sum_insured NUMERIC,
+ADD COLUMN IF NOT EXISTS premium_amount NUMERIC,
+ADD COLUMN IF NOT EXISTS policy_type TEXT,
+ADD COLUMN IF NOT EXISTS policy_tenure TEXT,
+ADD COLUMN IF NOT EXISTS policy_start_date DATE,
+ADD COLUMN IF NOT EXISTS policy_end_date DATE,
+ADD COLUMN IF NOT EXISTS commission_amount NUMERIC;
